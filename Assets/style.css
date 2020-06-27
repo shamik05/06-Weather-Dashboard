@@ -27,3 +27,8 @@ body,
     width: 265px;
     display: inline-block;
 }
+
+#searchBtn {
+    background-color: rgb(0, 85, 155);
+    color: white;
+}
