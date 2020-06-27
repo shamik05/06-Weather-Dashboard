@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* html,
+body,
+.container-fluid {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.navbar {
+    height: 100px;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: ;
+}
+
+.details {
+    width: 265px;
+    display: inline-block;
+}
