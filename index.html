@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./Assets/style.css" />
     <title>Weather Dashboard</title>
 
-    <!-- The below code was for debugging purposes on how the grid visibly operated -->
+    <!-- The below code was for debugging purposes on how the grid visibly operates -->
     <!-- <style>
       div {
         border: 1px solid green;
@@ -30,32 +30,83 @@
   </head>
 
   <body>
-    <header>
-        <h1>Weather Dashboard</h1>
-        <nav class="navbar navbar-dark bg-dark">
-        <!-- Navbar content -->
-        </nav>
+    <nav class="navbar navbar-dark bg-dark justify-content-center ">
+    <h1>Weather Dashboard</h1>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row">
+            <div class="col-3">
+              <h4>Search for a City</h4>
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="City" aria-label="Username" aria-describedby="searchBtn">
+                  <div class="input-group-append">
+                    <button type="button" class="btn" id="searchBtn">Search</button>
+                  </div>
+              </div>
 
-    </header>
+              <ul class="list-group">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+              </ul> 
+            </div>
+
+            <div class="col-9">
+              <div class="card">
+                <div class="card-body">
+                  City Name:<br>
+                  Temperature:<br>
+                  Humidity:<br>
+                  Wind Speed:<br>
+                  UV Index:
+                </div>
+              </div>
+
+              <h2>5-Day Forecast</h2>
+              <div class="card details">
+                Date<br>
+                Icon<br>
+                Temp:<br>
+                Humidity:
+              </div>
+
+              <div class="card details">
+                Date<br>
+                Icon<br>
+                Temp:<br>
+                Humidity:
+              </div>
+
+              <div class="card details">
+                Date<br>
+                Icon<br>
+                Temp:<br>
+                Humidity:
+              </div>
+
+              <div class="card details">
+                Date<br>
+                Icon<br>
+                Temp:<br>
+                Humidity:
+              </div>
+
+              <div class="card details">
+                Date<br>
+                Icon<br>
+                Temp:<br>
+                Humidity:
+              </div>
+            </div>
+        </div>
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="./Assets/script.js"></script>
   </body>
 </html>
