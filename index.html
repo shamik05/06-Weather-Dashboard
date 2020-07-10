@@ -37,13 +37,11 @@
     <div class="container-fluid">
       <div class="row">
             <div class="col-3">
-              <h4>Search for a City</h4>
+              <h3>Search for a City</h3>
               <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="City" aria-label="Username" aria-describedby="searchBtn">
+                  <input type="text" id=searchText class="form-control" placeholder="City" aria-label="Username" aria-describedby="searchBtn" value="Ottawa" required>
                   <div class="input-group-append">
-                    <button type="button" class="btn" id="searchBtn">
-                      <i class="fas fa-search"></i>
-                    </button>
+                    <button type="button" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
                   </div>
               </div>
 
@@ -57,20 +55,20 @@
             <div class="col-9">
               <div class="card">
                 <div class="card-body">
-                  <i class="fas fa-city"></i>City Name:<br>
-                  <i class="fas fa-thermometer-half"></i> Temperature:<br>
-                  <i class='fas fa-water'></i>Humidity:<br>
-                  <i class='fas fa-wind'></i>Wind Speed:<br>
-                  <div>Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>UV Index:
+                  <h3><span><i class="fas fa-city"></i> City Name:</span></h3>
+                  <span><i class="fas fa-thermometer-half"></i> Temperature:</span><br>
+                  <span><i class='fas fa-water'></i> Humidity:</span><br>
+                  <span><i class='fas fa-wind'></i> Wind Speed:</span><br>
+                  <span><i class='fas fa-sun'></i> UV Index:</span><br>
                 </div>
               </div>
 
-              <h2>5-Day Forecast</h2>
+              <h3>5-Day Forecast</h3>
               <div class="card details">
-                Date<br>
-                Icon<br>
-                Temp:<br>
-                Humidity:
+                <span>Date</span><br>
+                <span>Icon</span><br>
+                <span>Temp:</span><br>
+                <span>Humidity:</span>
               </div>
 
               <div class="card details">
