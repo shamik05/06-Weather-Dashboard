@@ -16,19 +16,52 @@ body,
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .navbar {
     height: 100px;
     color: whitesmoke;
     font-size: 3rem;
-    font-weight: ;
+    margin-bottom: 1rem;
+}
+
+.current {
+  margin-bottom: 1.5rem;
+}
+.card-body {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+i {
+  padding-bottom: 0.5rem;
+  /* height: 3rem; */
+}
+
+img {
+  height: 2.5rem;
 }
 
 .details {
-    width: 265px;
+    /* width: 265px; */
     display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#forecast {
+  display: inline-block;
 }
 
 #searchBtn {
     background-color: rgb(0, 85, 155);
     color: white;
+}
+
+.form-control {
+  font-size: 1.5rem;
 }
