@@ -36,8 +36,8 @@
     
     <div class="container-fluid">
       <div class="row">
-            <div class="col-3">
-              <h3>Search for a City</h3>
+            <div class="col-2">
+              <h3>Search for a City:</h3>
               <div class="input-group mb-3">
                   <input type="text" id="searchText" class="form-control" placeholder="City" aria-label="Username" aria-describedby="searchBtn" value="Ottawa" required>
                   <div class="input-group-append">
@@ -52,52 +52,27 @@
               </ul> 
             </div>
 
-            <div class="col-9">
-              <div class="card">
+            <div class="col-10">
+              <div class="card current">
                 <div class="card-body">
-                  <h3><span><i class="fas fa-city"></i> City Name:</span></h3>
-                  <span><i class="fas fa-thermometer-half"></i> Temperature:</span><br>
-                  <span><i class='fas fa-water'></i> Humidity:</span><br>
-                  <span><i class='fas fa-wind'></i> Wind Speed:</span><br>
-                  <span><i class='fas fa-sun'></i> UV Index:</span><br>
+                  <i class="fas fa-city"></i><span id="cityName"> City Name:</span><br>
+                  <i class="fas fa-thermometer-half"></i> Temperature: <span id="cityTemp"> </span><br>
+                  <i class='fas fa-water'></i> Humidity:<span id="cityHumidity"></span><br>
+                  <i class='fas fa-wind'></i> Wind Speed:<span id="cityWind"></span><br>
+                  <i class='fas fa-sun'></i> UV Index: <span id="cityUV"></span><br>
                 </div>
               </div>
 
               <h3>5-Day Forecast</h3>
-              <div class="card details">
-                <span>Date</span><br>
-                <span>Icon</span><br>
-                <span>Temp:</span><br>
-                <span>Humidity:</span>
+              <div id="forecast" class="card">
+                <!-- <div class="card details">
+                  <span>Date:</span><br>
+                  <span>Icon:</span><br>
+                  <span>Temp:</span><br>
+                  <span>Humidity:</span>
+                </div> -->
               </div>
-
-              <div class="card details">
-                Date<br>
-                Icon<br>
-                Temp:<br>
-                Humidity:
-              </div>
-
-              <div class="card details">
-                Date<br>
-                Icon<br>
-                Temp:<br>
-                Humidity:
-              </div>
-
-              <div class="card details">
-                Date<br>
-                Icon<br>
-                Temp:<br>
-                Humidity:
-              </div>
-
-              <div class="card details">
-                Date<br>
-                Icon<br>
-                Temp:<br>
-                Humidity:
-              </div>
+              
             </div>
         </div>
 
@@ -106,7 +81,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/script.js"></script>
   </body>
 </html>
