@@ -5,16 +5,17 @@
 }
 
 /* html,
-body,
+body
 .container-fluid {
+  
   height: 100%;
   margin: 0;
   padding: 0;
 } */
 
 .container-fluid {
-    padding-left: 50px;
-    padding-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navbar {
@@ -42,19 +43,22 @@ img {
 }
 
 .details {
-    /* width: 265px; */
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
+  /* width: 265px; */
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #forecast {
   display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 #searchBtn {
@@ -64,4 +68,11 @@ img {
 
 .form-control {
   font-size: 1.5rem;
+}
+
+#cityUV {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  color: white;
 }
