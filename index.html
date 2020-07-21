@@ -36,30 +36,33 @@
     
     <div class="container-fluid">
       <div class="row">
-            <div class="col-2">
+            <div class="col-3">
+              <form id="searchForm" class="needs-validation">
               <h3>Search for a City:</h3>
               <div class="input-group mb-3">
-                  <input type="text" id="searchText" class="form-control" placeholder="City" aria-label="Username" aria-describedby="searchBtn" value="Ottawa" required>
+                  <input type="text" id="searchText" class="form-control" style="text-transform:uppercase" placeholder="City" aria-label="Username" aria-describedby="searchBtn" value="Ottawa" required>
                   <div class="input-group-append">
                     <button type="button" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
                   </div>
               </div>
-
+              </form>
               <ul id="searchList" class="list-group">
                 <!-- <li class="list-group-item">First item</li>
                 <li class="list-group-item">Second item</li>
                 <li class="list-group-item">Third item</li> -->
               </ul> 
+              
             </div>
+          
 
-            <div class="col-10">
+            <div class="col-9">
               <div class="card current">
                 <div class="card-body">
                   <i class="fas fa-city"></i><span id="cityName"> City Name:</span><br>
                   <i class="fas fa-thermometer-half"></i> Temperature: <span id="cityTemp"> </span><br>
                   <i class='fas fa-water'></i> Humidity:<span id="cityHumidity"></span><br>
                   <i class='fas fa-wind'></i> Wind Speed:<span id="cityWind"></span><br>
-                  <i class='fas fa-sun'></i> UV Index: <span id="cityUV"></span><br>
+                  <i class='fas fa-sun'></i> UV Index: <span id="cityUV"></span>
                 </div>
               </div>
 
