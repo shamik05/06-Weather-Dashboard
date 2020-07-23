@@ -46,7 +46,7 @@ weatherAjax = city =>{
 
         // Response results shown as text for Current Weather
         cityName.innerHTML = ` ${response.name} ${moment().format("(MM/D/Y)")}`;
-        response.weather.forEach(element => cityName.innerHTML += `<img src="http://openweathermap.org/img/wn/${element.icon}.png" data-toggle="tooltip" data-placement="right" title="${element.description}">` )
+        response.weather.forEach(element => cityName.innerHTML += `<img src="https://openweathermap.org/img/wn/${element.icon}.png" data-toggle="tooltip" data-placement="right" title="${element.description}">` )
         cityTemp.textContent = ` ${response.main.temp}\xB0C`;
         cityHumidity.textContent = ` ${response.main.humidity}%`;
         cityWind.textContent = ` ${response.wind.speed}m/s`;
@@ -112,7 +112,7 @@ forecastAjax = (lat,lon) =>{
         for(let i=1; i<6; i++){
             // Create card with details for each day and append it to Forecast section
             cityForecast.innerHTML += `<div class="card details"><span data-toggle="tooltip" data-placement="right" title="${i} Days from Today">${moment.unix(response.daily[i].dt).format("(MM/D/Y)")}</span><br></div>`
-            response.daily[i].weather.forEach(element => cityForecast.lastElementChild.innerHTML += `<img class="imgFore" src="http://openweathermap.org/img/wn/${element.icon}@2x.png" data-toggle="tooltip" data-placement="right" title="${element.description}">`)
+            response.daily[i].weather.forEach(element => cityForecast.lastElementChild.innerHTML += `<img class="imgFore" src="https://openweathermap.org/img/wn/${element.icon}@2x.png" data-toggle="tooltip" data-placement="right" title="${element.description}">`)
             cityForecast.lastElementChild.innerHTML += `<br><span data-toggle="tooltip" data-placement="right" title="Temperature in Celsius">Temp: ${((response.daily[i].temp.max+response.daily[i].temp.min)/2).toFixed(2)}\xB0C<br></span>
             <span data-toggle="tooltip" data-placement="right" title="Humidity">Humidity: ${response.daily[i].humidity}%</span>`
         }
