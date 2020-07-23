@@ -4,20 +4,16 @@
   box-sizing: border-box;
 }
 
-/* html,
-body
-.container-fluid {
-  
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
+body {
+  background-color: #eeeeee;
+}
 
 .container-fluid {
   padding-left: 50px;
   padding-right: 50px;
 }
 
+/* Navbar */
 .navbar {
     height: 100px;
     color: whitesmoke;
@@ -25,33 +21,49 @@ body
     margin-bottom: 1rem;
 }
 
+/* Current Weather */
 .current {
   margin-bottom: 1.5rem;
 }
+
+/* UV Index */
+#cityUV {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  color: white;
+}
+
 .card-body {
   padding: 1rem;
   font-size: 1.5rem;
+  background-color: #007bff;
+  border-radius: 10px;
+  color: white;
 }
 
+/* Fontawesome Icons */
 i {
   padding-bottom: 0.5rem;
-  /* height: 3rem; */
 }
 
+/* Images for Current Weather */
 img {
-  height: 2.5rem;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Forecasted Weather */
 .details {
-  /* width: 265px; */
   display: inline-block;
   background-color: #007bff;
   color: white;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
+  border-radius: 10px;
 }
 
 #forecast {
@@ -59,20 +71,57 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+  background-color: #eeeeee
 }
 
-#searchBtn {
-    background-color: rgb(0, 85, 155);
-    color: white;
+/* Images for Forecasted Weather */
+.imgFore {
+  height: 8rem;
+}
+
+/* Search Bar */
+#searchForm {
+  display: block;
 }
 
 .form-control {
   font-size: 1.5rem;
+  float: left;
 }
 
-#cityUV {
-  padding: 0.3rem;
-  border-radius: 0.5rem;
-  display: inline-block;
+/* Search Result Error */
+#searchHelpBlock {
+  clear: both;
+  font-size: smaller;
+  display: block; 
+}
+
+/* Search Button */
+#searchBtn {
+  background-color: rgb(0, 85, 155);
+  color: white;
+  float: right;
+  padding-bottom: 0;
+}
+
+button:hover {
+  border-color: #22bcce;
+}
+
+/* Search History */
+.list-group-item {
+  font-size: 1.5rem;
+  background-color: aliceblue;
+}
+
+li:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #007bff;
   color: white;
 }
+
