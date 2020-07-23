@@ -7,7 +7,9 @@ Weather Dashboard
 This is homework 6 of bootcampspot with emphases on server-side apis. It is an app to look up a city's weather. It uses the [OpenWeather API](https://openweathermap.org/api) to display the current weather with some basic info and a 5 day forecast. The information includes weather condition, temperature, humidity, wind speed, and uv index. Search results are saved to local storage and persist through restarts to access. 
 
 ## Visuals
-<iframe src="https://drive.google.com/file/d/1wCxKq3ZlEgeHSvK0Cc97LKNElCxFXEZH/preview" width="640" height="480"></iframe>
+The following image demonstrates the application functionality:
+
+![weather dashboard demo](./Assets/weather-dashboard.gif)
 
 ## Installation
 Download or clone the repository to a suitable location.
