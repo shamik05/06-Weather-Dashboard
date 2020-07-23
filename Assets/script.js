@@ -14,7 +14,7 @@ let cityList = [];
 
 // Main Ajax call to openweathermap
 weatherAjax = city =>{
-    const queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
+    const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
     $.ajax({
         url: queryURL,
         method: "GET",
